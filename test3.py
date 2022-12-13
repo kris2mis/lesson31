@@ -1,18 +1,22 @@
-# полная структура механизма обработкт exept
+# полная структура механизма обработки except
 
 #
-try:
+try:  # сюда помещаем потенциально опасный код
     pass
-except NameError:
+except NameError:  # обработчик
     pass
 except Exception:
     pass
 except BaseException:
     pass
-else:
+else:  # выполняется если exception не произошел
     pass
-finally:
+finally:  # выполняется всегда
     pass
+
+# генерация вручную
+raise Exception
+raise Exception("iquyewf")  # с данными
 
 #
 while True:
